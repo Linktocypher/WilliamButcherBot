@@ -21,8 +21,8 @@ if HEROKU:
     MESSAGE_DUMP_CHAT = int(environ.get("MESSAGE_DUMP_CHAT", -1001514721354))
     WELCOME_DELAY_KICK_SEC = int(environ.get("WELCOME_DELAY_KICK_SEC", 300))
     MONGO_URL = environ.get("MONGO_URL", "mongodb+srv://cypher:K123k123@cluster0.30k9rz6.mongodb.net/?retryWrites=true&w=majority")
-    ARQ_API_URL = environ.get("ARQ_API_URL", None)
-    ARQ_API_KEY = environ.get("ARQ_API_KEY", None)
+    ARQ_API_URL = environ.get("ARQ_API_URL", "https://arq.hamker.in")
+    ARQ_API_KEY = environ.get("ARQ_API_KEY", "XKHEJO-MEJYWH-LAWISV-YKWFYP-ARQ")
     LOG_MENTIONS = bool(int(environ.get("LOG_MENTIONS", True)))
     RSS_DELAY = int(environ.get("RSS_DELAY", 300))
     PM_PERMIT = bool(int(environ.get("PM_PERMIT", True)))
@@ -41,8 +41,8 @@ else:
     MESSAGE_DUMP_CHAT = -1001514721354
     WELCOME_DELAY_KICK_SEC = 300
     MONGO_URL = "mongodb+srv://cypher:K123k123@cluster0.30k9rz6.mongodb.net/?retryWrites=true&w=majority"
-    ARQ_API_KEY = None
-    ARQ_API_URL = None
+    ARQ_API_KEY = "XKHEJO-MEJYWH-LAWISV-YKWFYP-ARQ"
+    ARQ_API_URL = "https://arq.hamker.in"
     LOG_MENTIONS = True
     RSS_DELAY = 300  # In seconds
     PM_PERMIT = True
